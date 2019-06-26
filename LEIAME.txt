@@ -1,0 +1,40 @@
+*****  SOBRE A APLICAÇÃO  *****
+
+A aplicação foi desenvolvida atraves da framework Laravel;
+Dependencias: Jquery, Bootstrap, Bootstrap maskinput;
+
+
+
+
+*****  REQUISITOS  *****
+
+Todos requisitos nao funcionais obrigatorios foram concluídos;
+
+Todos os requisitos funcionais obrigatorios propostos pelo desafio foram implementadas como requisitado;
+
+Alguns requisitos funcionais nao obrigatorios foram concluidos sendo eles:
+
+?	Uso de um framework como Laravel;
+?	Uso da API Bootstrap para listagem dos dados;
+?	Pode ser usado template HTML com Layout Pronto;
+?	Pode ser feito Menu ou atalhos para as paginas.
+
+
+
+*****  MELHORIAS  *****
+>>>Melhorias de legibilidade do código:
+
+-Compactar layout do cadastro e edição em um só, preenhido via javaScript dependendo do evento;
+-Incluir verificaçãoo de idade no MedicoRequest para melhor atender a Orientação a objetos;
+-Autenticação para poder filtrar que tipo de funcinalidades usuarios não cadastrado podem acessar;
+-Pasta de ultilitarios com classe de derviços para isolar métodos, como verIdade();
+-Separar scripts;
+
+
+>>>Melhorias de Desing:
+
+-Ajustar tamnho de janelas de cadastro e edicao;
+-Campo porporcionais ao dado a ser preenchido;
+-Layouts diferenciados para menssagens de erros/suscesso;
+
+

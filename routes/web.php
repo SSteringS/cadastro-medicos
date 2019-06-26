@@ -20,10 +20,15 @@ Route::get('/medicos', 'MedicosController@index')
 
 Route::post('/medicos', 'MedicosController@store');
 
+Route::post('/medicos/{id}/editar', 'MedicosController@edit');
+
+Route::post('/medicos/editar', 'MedicosController@edit');
+
+
 Route::get('/especialidades', 'EspecialidadesController@index')
     ->name('especialidades.index');
 
-Route::get('/medicos/cadastrar', 'MedicosController@create')
+Route::get('/medicos/cadastrar', 'MedicosController@verIdade')
     ->name('form_cadastrar_medico');
 
 Route::get('/medicos/cadastrar_especialidade', 'EspecialidadesController@create')
@@ -35,4 +40,3 @@ Route::post('/medicos/cadastrar_especialidade', 'EspecialidadesController@store'
 
 Route::post('/medicos/remover/{id}', 'MedicosController@destroy');
 
-Route::get('medicos/modal', 'MedicosControler@modal');

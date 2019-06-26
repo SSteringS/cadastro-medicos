@@ -2,22 +2,29 @@
 
 
 @section('cabecalho')
-    Médicos
+    Escpecialidades
 @endsection
 
 
 @section('conteudo')
 
-
-    <a href="{{ route('form_cadastrar_medico') }}" class="btn btn-dark mb-2">Cadastrar médico</a>
-
-    <a href="{{ route('form_cadastrar_especialidade') }}" class="btn btn-dark mb-2">Cadastrar especialidade</a>
-
-    <ul class="list-group">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Especialidade</th>
+                <th scope="col">Id</th>
+            </tr>
+        </thead>
+        <tbody>
         @foreach($especialidades as $especialidade)
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                {{ $especialidade->nome }}
-            </li>
+        <tr>
+            <th scope="row">{{$especialidade->nome}}</th>
+            <td>{{$especialidade->id}}</td>
+        </tr>
         @endforeach
-    </ul>
+        </tbody>
+    </table>
+
+    <a href="/medicos/cadastrar_especialidade"><button class="btn btn-primary">Cadastrar especialidade</button></a>
+    <a href="/medicos"><button class="btn btn-primary">Voltar</button></a>
 @endsection

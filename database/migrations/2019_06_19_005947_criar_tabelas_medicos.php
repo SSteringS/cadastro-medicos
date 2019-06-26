@@ -20,9 +20,9 @@ class CriarTabelasMedicos extends Migration
             $table->string('cpf');
             $table->string('especialidade');
             $table->string('data_aniversario');
-            $table->string('telefone');
-            $table->string('salario');
-            $table->string('crm');
+            $table->string('telefone')->nullable();
+            $table->string('salario')->nullable();
+            $table->string('crm')->nullable();
 
         });
     }

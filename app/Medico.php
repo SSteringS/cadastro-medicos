@@ -5,6 +5,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * @method static find(int $id)
+ */
 class Medico extends Model
 {
     public $timestamps = false;
@@ -17,12 +20,11 @@ class Medico extends Model
         'telefone',
         'salario',
         'crm',
-
-];
+    ];
 
     public function especialidades()
     {
-        return $this->belongsTo(Especialidade::class);
+        return $this->hasOne(Especialidade::class);
     }
 
 }

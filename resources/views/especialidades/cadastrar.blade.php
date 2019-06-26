@@ -8,6 +8,8 @@
 
 @section('conteudo')
 
+    <div class="d-inline">
+
     <form method="post">
         @csrf
         <div class="form-group">
@@ -15,7 +17,11 @@
             <input type="text" class="form-control" name="nome" id="nome">
         </div>
 
-        <button class="btn btn-primary">Cadastrar</button>
+        <div class=""><button class="btn btn-primary">Cadastrar</button></div>
     </form>
+
+        <div><a href="/medicos"> <button class="btn btn-primary mt-2" onclick="voltar()">Voltar</button></a></div>
+
+    </div>
 
 @endsection
